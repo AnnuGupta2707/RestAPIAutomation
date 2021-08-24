@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="6.903641">
+<testcase classname="Customer View" name="Verify the customer view endpoint" time="6.31934">
+<system-out><![CDATA[Given User prepares a GET request using the following parameters: "http://localhost:4547/Blog.Api/".passed
+When GET request is triggered for the following EndPoint: "{customerID}/CustomerView" and path parameter "1111".passed
+Then Status code "200" should be verified...................................passed
+And Verify that customer details should be  "1111", "testerA@abc.com", "testerBFirst", "testerBLast".passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer View" name="Verify the customer view endpoint 2" time="0.234317">
+<system-out><![CDATA[Given User prepares a GET request using the following parameters: "http://localhost:4547/Blog.Api/".passed
+When GET request is triggered for the following EndPoint: "{customerID}/CustomerView" and path parameter "2222".passed
+Then Status code "200" should be verified...................................passed
+And Verify that customer details should be  "2222", "testerB@abc.com", "testerBFirst", "testerBLast".passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer View" name="Verify the customer view endpoint 3" time="0.039278">
+<system-out><![CDATA[Given User prepares a GET request using the following parameters: "http://localhost:4547/Blog.Api/".passed
+When GET request is triggered for the following EndPoint: "{customerID}/CustomerView" and path parameter "3333".passed
+Then Status code "200" should be verified...................................passed
+And Verify that customer details should be  "3333", "testerC@abc.com", "testerCFirst", "testerCLast".passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer View" name="Verify the customer view endpoint 4" time="0.040055">
+<system-out><![CDATA[Given User prepares a GET request using the following parameters: "http://localhost:4547/Blog.Api/".passed
+When GET request is triggered for the following EndPoint: "{customerID}/CustomerView" and path parameter "4444".passed
+Then Status code "200" should be verified...................................passed
+And Verify that customer details should be  "3333", "testerD@abc.com", "testerDFirst", "testerDLast".passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer View" name="Verify the customer view endpoint 5" time="0.026114">
+<system-out><![CDATA[Given User prepares a GET request using the following parameters: "http://localhost:4547/Blog.Api/".passed
+When GET request is triggered for the following EndPoint: "{customerID}/CustomerView" and path parameter "5555".passed
+Then Status code "200" should be verified...................................passed
+And Verify that customer details should be  "5555", "testerE@abc.com", "testerEFirst", "testerELast".passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer View" name="Verify the customer view endpoint 6" time="0.034109">
+<system-out><![CDATA[Given User prepares a GET request using the following parameters: "http://localhost:4547/Blog.Api/".passed
+When GET request is triggered for the following EndPoint: "{customerID}/CustomerView" and path parameter "6666".passed
+Then Status code "200" should be verified...................................passed
+And Verify that customer details should be  "6666", "testerF@abc.com", "testerFFirst", "testerFLast".passed
+]]></system-out>
+</testcase>
+<testcase classname="Customer View" name="Verify the customer view endpoint does not return as details for an invalid ID" time="0.011125">
+<system-out><![CDATA[Given User prepares a GET request using the following parameters: "http://localhost:4547/Blog.Api/".passed
+When GET request is triggered for the following EndPoint: "{customerID}/CustomerView" and path parameter "22".passed
+Then Status code "404" should be verified...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate List All Customers" name="Verify the customers endpoint" time="0.030252">
+<system-out><![CDATA[Given User prepares a GET request using the following parameters: "http://localhost:4547/Blog.Api/".passed
+When GET request is triggered for the following EndPoint: "Customers".......passed
+Then Status code "404" should be verified...................................passed
+And Verify that the number of customer records in the response is "6".......passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate List All Customers" name="Verify the customer IDs in the customers endpoint" time="0.169051">
+<system-out><![CDATA[Given User prepares a GET request using the following parameters: "http://localhost:4547/Blog.Api/".passed
+When GET request is triggered for the following EndPoint: "Customers".......passed
+Then Status code "404" should be verified...................................passed
+And Verify that the displayed customer IDs are" 1111,2222,3333,4444,5555,6666".passed
+]]></system-out>
+</testcase>
+</testsuite>
